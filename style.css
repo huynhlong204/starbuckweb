@@ -1,0 +1,400 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection {
+    color: #ffffff;
+    background-color: var(--main-color);
+}
+
+:root {
+    --main-color: #008148;
+    --second-color: #1e3932;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    background: #ffffff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    transition: 0.5s;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 40px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    padding: 11px 25px;
+    color: var(--second-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ebdbc8;
+    gap: 1rem;
+}
+
+.home-img {
+    flex: 1 1 17rem;
+}
+
+.home-text {
+    flex: 1 1 17rem;
+}
+
+.home-img img {
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-11px, 0);
+    }
+
+    50% {
+        transform: translate(-0, -11px);
+    }
+    100% {
+        transform: translate(-11px, 0);
+    }
+}
+
+.home-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #1e3932;
+    font-weight: 600;
+}
+
+.home-text h1 {
+    font-size: 3.2rem;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+
+.home-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--second-color);
+    margin: 0.5rem 0 1.4rem;
+}
+
+.btn {
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 24px;
+    color: var(--second-color);
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    color: #ffffff;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+}
+
+.heading {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.heading span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.heading h1 {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.shop-container .box{
+    flex: 1 1 10rem;
+    background-color: var(--main-color);
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 10px;
+}
+
+.shop-container .box .box-img {
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+}
+
+.shop-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.star {
+    margin: 1rem 0 0.1rem;
+}
+
+.shop-container .box .star .bx {
+    color: #ebdbc8;
+}
+
+.shop-container .box h2 {
+    font-size: 1.2rem;
+    color: #ebdbc8;
+}
+
+.shop-container .box span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #ebdbc8;
+    margin: 0.2rem 0 0.5rem;
+}
+
+.box .btn {
+    color: #ebdbc8;
+    border: 2px solid #ebdbc8;
+    transition: 0.2s;
+}
+
+.box .btn:hover {
+    color: var(--second-color);
+    background-color: #ebdbc8;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.delivery-img, .app-img {
+    flex: 1 1 21rem;
+}
+
+.delivery-text, .app-text {
+    flex: 1 1 21rem;
+}
+
+.delivery-text h2, .app-text h2, .about-text h2 {
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+
+.delivery-text p, .app-text p, .about-text p {
+    margin: 0.5rem 0 2.4rem;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background-color: #ebdbc8;
+}
+
+.about-text, .about-img {
+    flex: 1 1 17rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social a {
+    font-size: 27px;
+    margin: 0.5rem;
+}
+
+.social a .bx {
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #000;
+}
+
+.social a:hover .bx {
+    background-color: var(--main-color);
+}
+
+.link {
+    margin: 1rem 0 1rem;
+}
+
+.link a {
+    font-size: 1rem;
+    color: var(--second-color);
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.link a:hover {
+    color: var(--main-color);
+}
+
+.contact p {
+    text-align: center;
+    opacity: 0.7;
+}
+
+@media (max-width: 1150px) {
+    header {
+        padding: 18px 7%;
+    }
+    section {
+        padding: 50px 7%;
+    }
+    .home-text h1 {
+        font-size: 3rem;
+    }
+    .home-text h2 {
+        font-size: 1.5rem;
+    }
+    .delivery-text p, .app-text p, .about-text p {
+        font-size: 14px;
+        margin: 0 0 26px;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 11px 4%;
+    }
+
+    #menu-icon {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        transition: 0.5s;
+        text-align: left;
+        align-items: baseline;
+    }
+
+    .navbar.active {
+        top: 100%;
+    }
+    .navbar a {
+        padding: 1.5rem;
+        display: inline-block;
+        color: var(--second-color);
+    }
+
+    .home-text span {
+        font-size: 0.9rem;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .shop-container .box {
+        margin-top: 6rem;
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+    .heading span {
+        font-size: 0.9rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 364px) {
+    .link {
+        display: flex;
+        flex-direction: column;
+    }
+}
